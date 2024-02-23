@@ -54,3 +54,18 @@ eot1      <- data %>%
 
 
 
+## meta-analysis
+# net <- netmeta(effect, se,
+#                treat1, treat2, study,
+#                data = xx,
+#                sm = "SMD",
+#                ref = "PBO",
+#                comb.fixed = FALSE,
+#                comb.random = TRUE,
+#                tol.multiarm = 0.075
+#                )
+# 
+# 
+# summary(net)
+# forest(net, sortvar = TE)
+# netrank(net)
