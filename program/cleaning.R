@@ -70,18 +70,22 @@ data$change_sd <- ifelse(is.na(data$change_sd),
                           data$change_sd
                           )
 
-# calcualte standard deviation of mean difference from t-value
+# calculate standard deviation of mean difference from t-value
 data$change_sd <- ifelse(!is.na(data$change_tvalue),
                          abs(data$change_mean / data$change_tvalue) * sqrt(data$n_post),
                          data$change_sd
                          )
 
 
+# fix intervention labels
+labels <- read_excel("data/data05032024clean.xlsx", sheet = "labels")
+data <- data %>% left_join(labels, by = "approach_mod")
+
 # split data set
 data$combination <- paste0(data$outcome, " ", data$preventiontype)
 data <- data %>% select(
   id, studlab,
-  preventiontype, approach_mod, outcome, combination,
+  preventiontype, label, outcome, combination,
   questionaire, questionaire_note,
   analysis, analysis_notes,
   n_pre, n_post,

@@ -6,7 +6,8 @@ data <- readRDS("data/datasets.rds")
 bd <- data[["Body dissatifaction selective"]] %>%
   filter(analysis == "Main") %>%
   filter(!id %in% c(201, 230)) %>% 
-  select(id, studlab, approach_mod, n_pre:change_sd)
+  select(id, studlab, approach_mod, questionaire_note, n_pre:change_sd)
+bd$change_mean <- ifelse(bd$questionaire_note == "BS", bd$change_mean * -1, bd$change_mean)
 
 ed <- data[["ED symptoms selective"]] %>%
   filter(analysis == "Main") %>%
@@ -14,6 +15,7 @@ ed <- data[["ED symptoms selective"]] %>%
 
 di <- data[["Dieting selective"]] %>%
   filter(analysis == "Main") %>%
+  filter(!id %in% c(201)) %>%
   select(id, studlab, approach_mod, n_pre:change_sd)
 
 data <- NULL
@@ -21,7 +23,7 @@ data <- NULL
 ## Functions for output
 # Pairwise comparison
 pairmod <- function (x) {
-  dts <- pairwise(treat = approach_mod,
+  dts <- pairwise(treat = labels,
                   n = n_pre,
                   mean = change_mean,
                   sd = change_sd,
@@ -46,7 +48,9 @@ netgraphmod <- function (x) {
                   plastic = FALSE,
                   number.of.studies = TRUE,
                   cex.points = n.trts,
-                  cex = 1.25
+                  cex = 1.25,
+                  offset = 0.05,
+                  labels = paste0(trts, "\n(n=", round(n.trts), ")")
   )
   return(ngr)
 }
@@ -122,7 +126,7 @@ sink(file = "output/selective_dieting_results.txt")
 summary(net.s.di, digits = 2)
 sink()
 
-png(filename = "output/selective_dieting_netgraph.png", width = 7, height = 5, units = "in", res = 300)
+png(filename = "output/selective_dieting_netgraph.png", width = 12, height = 8, units = "in", res = 300)
 netgraphmod(net.s.di)
 dev.off()
 
