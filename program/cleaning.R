@@ -95,5 +95,5 @@ split_data <- split(data, data$combination)
 
 # save data sets
 saveRDS(split_data, file = "data/datasets.rds")
-rm("data.ed", "data.bd", "data.di", "data", "split_data")
+rm("data.ed", "data.bd", "data.di", "data", "split_data", "labels")
 rm("i", "missing_sd", "replacement_values", "var")
