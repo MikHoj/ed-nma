@@ -1,13 +1,30 @@
-
 ### Meta-analysis -----------------------------------------------------------
+
+## Load files
+data <- readRDS("data/datasets.rds")
+
+bd <- data[["Body dissatifaction selective"]] %>%
+  filter(analysis == "Main") %>%
+  filter(!id %in% c(201, 230)) %>% 
+  select(id, studlab, approach_mod, n_pre:change_sd)
+
+ed <- data[["ED symptoms selective"]] %>%
+  filter(analysis == "Main") %>%
+  select(id, studlab, approach_mod, n_pre:change_sd)
+
+di <- data[["Dieting selective"]] %>%
+  filter(analysis == "Main") %>%
+  select(id, studlab, approach_mod, n_pre:change_sd)
+
+data <- NULL
 
 ## Functions for output
 # Pairwise comparison
 pairmod <- function (x) {
-  dts <- pairwise(treat = intervention_mod,
-                  n = pre_n,
-                  mean = diff_mean,
-                  sd = diff_sd,
+  dts <- pairwise(treat = approach_mod,
+                  n = n_pre,
+                  mean = change_mean,
+                  sd = change_sd,
                   data = x,
                   studlab = studlab,
                   reference.group = "Control",
@@ -18,7 +35,7 @@ pairmod <- function (x) {
 
 # Data set for inspection
 datas <- function (x) {
-  dts <- x %>% select(studlab, treat1, treat2, n1, mean1, sd1, diff_mean1, diff_sd1, n2, mean2, sd2, diff_mean2, diff_sd2, TE, seTE)
+  dts <- x %>% select(studlab, treat1, treat2, TE, seTE, n1, mean1, sd1, n2, mean2, sd2)
   return(dts)
 }
 
@@ -49,7 +66,7 @@ forestplotmod <- function (x) {
 
 ## Selective prevention ----------------------------------------------------
 # Body dissatisfaction
-ma.s.bd <- pairmod(split_data[["selective_Body_Dissatisfaction"]])
+ma.s.bd <- pairmod(bd)
 write.xlsx(datas(ma.s.bd), file = "output/data.xlsx", sheetName = "Selec_bodydis", append = TRUE)
 
 net.s.bd <- netmeta(ma.s.bd,
@@ -71,7 +88,7 @@ dev.off()
 
 
 # ED symptoms
-ma.s.ed <- pairmod(split_data[["selective_ED_Symptoms"]])
+ma.s.ed <- pairmod(ed)
 write.xlsx(datas(ma.s.ed), file = "output/data.xlsx", sheetName = "Selec_edsymp", append = TRUE)
 
 net.s.ed <- netmeta(ma.s.ed,
@@ -93,7 +110,7 @@ dev.off()
 
 
 # Dieting
-ma.s.di <- pairmod(split_data[["selective_Dieting"]])
+ma.s.di <- pairmod(di)
 write.xlsx(datas(ma.s.di), file = "output/data.xlsx", sheetName = "Selec_dieting", append = TRUE)
 
 net.s.di <- netmeta(ma.s.di,

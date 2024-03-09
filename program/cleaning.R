@@ -1,13 +1,4 @@
-### ed-nma master
-
-## load packages
-library(here)
-library(readxl)
-library(dplyr)
-library(janitor)
-library(stringr)
-library(netmeta)
-library(xlsx)
+### ED NMA load and clean
 
 ## Import -------------------------------------------------------------------
 data <- read_excel("data/data05032024clean.xlsx",
@@ -87,7 +78,7 @@ data$change_sd <- ifelse(!is.na(data$change_tvalue),
 
 
 # split data set
-data$combination <- paste0(data$preventiontype, "_", data$outcome)
+data$combination <- paste0(data$outcome, " ", data$preventiontype)
 data <- data %>% select(
   id, studlab,
   preventiontype, approach_mod, outcome, combination,
