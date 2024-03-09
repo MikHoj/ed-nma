@@ -1,0 +1,39 @@
+Original data:
+
+               treat1      treat2      TE   seTE
+Alberts, 2012 Control Mindfulness  0.8065 0.4090
+Jacobi, 2012      CBT     Control -0.2210 0.1977
+
+Number of treatment arms (by study):
+              narms
+Alberts, 2012     2
+Jacobi, 2012      2
+
+Results (random effects model):
+
+               treat1      treat2     SMD            95%-CI
+Alberts, 2012 Control Mindfulness  0.8065 [ 0.0049; 1.6081]
+Jacobi, 2012      CBT     Control -0.2210 [-0.6084; 0.1665]
+
+Number of studies: k = 2
+Number of pairwise comparisons: m = 2
+Number of observations: o = 129
+Number of treatments: n = 3
+Number of designs: d = 2
+
+Random effects model
+
+Treatment estimate (sm = 'SMD', comparison: other treatments vs 'Control'):
+                SMD             95%-CI     z p-value
+CBT         -0.2210 [-0.6084;  0.1665] -1.12  0.2636
+Control           .                  .     .       .
+Mindfulness -0.8065 [-1.6081; -0.0049] -1.97  0.0486
+
+Quantifying heterogeneity / inconsistency:
+tau^2 = NA; tau = NA
+
+Tests of heterogeneity (within designs) and inconsistency (between designs):
+                Q d.f. p-value
+Total           0    0      --
+Within designs  0    0      --
+Between designs 0    0      --

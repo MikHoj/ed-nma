@@ -1,0 +1,185 @@
+Original data (with adjusted standard errors for multi-arm studies):
+
+                                  treat1             treat2      TE   seTE seTE.adj narms multiarm
+Albertson, 2015                  Control        Mindfulness  0.3850 0.0931   0.3548     2         
+Alleva, 2015                     Control TherapeuticWriting -0.2436 0.2231   0.4086     2         
+Alleva, 2018                     Control TherapeuticWriting -0.3992 0.1250   0.3645     2         
+Amaral, 2019                     Control    DissonanceBased  0.9992 0.1798   0.3867     2         
+Ariel-Donges, 2019               Control               Yoga -0.7544 0.2390   0.4175     2         
+Bearman, 2003                        CBT            Control -0.6467 0.2403   0.4183     2         
+Becker, 2008             DissonanceBased      MediaLiteracy -0.0188 0.1521   0.3746     2         
+Becker, 2006             DissonanceBased      MediaLiteracy  0.0728 0.2240   0.4091     2         
+Becker, 2010             DissonanceBased      HealthyWeight -0.0699 0.1982   0.3956     2         
+Brown, 2015                      Control    DissonanceBased  0.7994 0.2449   0.4209     2         
+Earnhardt, 2002                  Control TherapeuticWriting  0.0100 0.2889   0.4480     2         
+Fisher, 1994                         CBT            Control -0.8285 0.3640   0.6083     3        *
+Fisher, 1994                         CBT   PhysicalActivity -0.0862 0.3661   0.6120     3        *
+Fisher, 1994                     Control   PhysicalActivity  0.7423 0.3741   0.6267     3        *
+Garbett, 2023                    Control     Multicomponent  0.0290 0.0464   0.3455     2         
+Ghaderi, 2020                    Control    DissonanceBased  0.2272 0.1167   0.4430     3        *
+Ghaderi, 2020            DissonanceBased TherapeuticWriting -0.2465 0.1163   0.4428     3        *
+Ghaderi, 2020                    Control TherapeuticWriting -0.0193 0.1166   0.4430     3        *
+Halliwell, 2015                  Control           One-Shot -0.3222 0.2562   0.4276     2         
+Heinicke, 2007                       CBT            Control -0.6013 0.2393   0.4177     2         
+Hudson, 2021                     Control    DissonanceBased  0.7299 0.1749   0.3844     2         
+Jacobi, 2007                         CBT            Control -0.0994 0.2033   0.3982     2         
+Karekla, 2022                        ACT            Control -0.6116 0.2314   0.4132     2         
+McLean, 2019       Appearance_Comparison      MediaLiteracy -0.0009 0.1490   0.4554     3        *
+McLean, 2019                     Control      MediaLiteracy -0.0421 0.1511   0.4574     3        *
+McLean, 2019       Appearance_Comparison            Control  0.0412 0.1582   0.4647     3        *
+Mulgrew, 2019                    Control TherapeuticWriting  0.1411 0.1857   0.3895     2         
+Nicolino, 2001                   Control           One-Shot  1.5410 0.2474   0.4224     2         
+Pacanowski, 2020                 Control               Yoga  0.0373 0.2774   0.4406     2         
+Perelman, 2022                   Control    DissonanceBased -0.0287 0.2074   0.4003     2         
+Resende, 2022                    Control    DissonanceBased  0.7035 0.2397   0.4179     2         
+Ridolfi, 2008                    Control           One-Shot  0.0639 0.2224   0.4083     2         
+Rodgers, 2018                    Control     Multicomponent -0.2392 0.1252   0.3645     2         
+Rohde, 2014a                     Control    DissonanceBased  0.8521 0.2321   0.4136     2         
+Rosen, 1989                          CBT            Control -1.9084 0.5061   0.6110     2         
+Seekis, 2020                     Control           One-Shot  1.4306 0.2582   0.4288     2         
+Sharpe, 2013                     Control     Multicomponent -0.0947 0.0972   0.3559     2         
+Stice, 2013                      Control    DissonanceBased  0.6044 0.1013   0.3570     2         
+Stice, 2001              DissonanceBased      HealthyWeight -0.3109 0.2311   0.4131     2         
+Stice, 2009                      Control    DissonanceBased  0.4414 0.1162   0.3615     2         
+Stice, 2015b                     Control    DissonanceBased  0.4461 0.3325   0.4773     2         
+Stice, 2023                      Control    DissonanceBased  0.8562 0.2459   0.4215     2         
+Tobin, 2022                      Control    DissonanceBased  0.4155 0.1894   0.4787     3        *
+Tobin, 2022              DissonanceBased     Multicomponent -0.1099 0.1944   0.4847     3        *
+Tobin, 2022                      Control     Multicomponent  0.3055 0.1869   0.4757     3        *
+Warschburger, 2018               Control     Multicomponent  0.0624 0.0600   0.3476     2         
+Winzelberg, 1998                     CBT            Control -0.5891 0.2710   0.4366     2         
+Winzelberg, 2000                     CBT            Control -0.4800 0.3071   0.4599     2         
+Vanderkruik, 2020                Control    DissonanceBased  3.9691 0.4007   0.5270     2         
+Zabinski, 2001                       CBT            Control -0.3690 0.2697   0.4358     2         
+
+Number of treatment arms (by study):
+                   narms
+Albertson, 2015        2
+Alleva, 2015           2
+Alleva, 2018           2
+Amaral, 2019           2
+Ariel-Donges, 2019     2
+Bearman, 2003          2
+Becker, 2008           2
+Becker, 2006           2
+Becker, 2010           2
+Brown, 2015            2
+Earnhardt, 2002        2
+Fisher, 1994           3
+Garbett, 2023          2
+Ghaderi, 2020          3
+Halliwell, 2015        2
+Heinicke, 2007         2
+Hudson, 2021           2
+Jacobi, 2007           2
+Karekla, 2022          2
+McLean, 2019           3
+Mulgrew, 2019          2
+Nicolino, 2001         2
+Pacanowski, 2020       2
+Perelman, 2022         2
+Resende, 2022          2
+Ridolfi, 2008          2
+Rodgers, 2018          2
+Rohde, 2014a           2
+Rosen, 1989            2
+Seekis, 2020           2
+Sharpe, 2013           2
+Stice, 2013            2
+Stice, 2001            2
+Stice, 2009            2
+Stice, 2015b           2
+Stice, 2023            2
+Tobin, 2022            3
+Warschburger, 2018     2
+Winzelberg, 1998       2
+Winzelberg, 2000       2
+Vanderkruik, 2020      2
+Zabinski, 2001         2
+
+Results (random effects model):
+
+                                  treat1             treat2     SMD             95%-CI
+Albertson, 2015                  Control        Mindfulness  0.3850 [-0.3103;  1.0804]
+Alleva, 2015                     Control TherapeuticWriting -0.0426 [-0.3739;  0.2887]
+Alleva, 2018                     Control TherapeuticWriting -0.0426 [-0.3739;  0.2887]
+Amaral, 2019                     Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Ariel-Donges, 2019               Control               Yoga -0.3798 [-0.9738;  0.2142]
+Bearman, 2003                        CBT            Control -0.5923 [-0.9035; -0.2812]
+Becker, 2008             DissonanceBased      MediaLiteracy -0.2308 [-0.6726;  0.2110]
+Becker, 2006             DissonanceBased      MediaLiteracy -0.2308 [-0.6726;  0.2110]
+Becker, 2010             DissonanceBased      HealthyWeight -0.1852 [-0.7452;  0.3748]
+Brown, 2015                      Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Earnhardt, 2002                  Control TherapeuticWriting -0.0426 [-0.3739;  0.2887]
+Fisher, 1994                         CBT            Control -0.5923 [-0.9035; -0.2812]
+Fisher, 1994                         CBT   PhysicalActivity  0.0291 [-0.8424;  0.9006]
+Fisher, 1994                     Control   PhysicalActivity  0.6214 [-0.2514;  1.4943]
+Garbett, 2023                    Control     Multicomponent  0.0461 [-0.2617;  0.3539]
+Ghaderi, 2020                    Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Ghaderi, 2020            DissonanceBased TherapeuticWriting -0.6968 [-1.0718; -0.3217]
+Ghaderi, 2020                    Control TherapeuticWriting -0.0426 [-0.3739;  0.2887]
+Halliwell, 2015                  Control           One-Shot  0.6680 [ 0.2549;  1.0811]
+Heinicke, 2007                       CBT            Control -0.5923 [-0.9035; -0.2812]
+Hudson, 2021                     Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Jacobi, 2007                         CBT            Control -0.5923 [-0.9035; -0.2812]
+Karekla, 2022                        ACT            Control -0.6116 [-1.4215;  0.1983]
+McLean, 2019       Appearance_Comparison      MediaLiteracy  0.2271 [-0.4484;  0.9026]
+McLean, 2019                     Control      MediaLiteracy  0.4234 [-0.0327;  0.8794]
+McLean, 2019       Appearance_Comparison            Control -0.1963 [-0.8749;  0.4823]
+Mulgrew, 2019                    Control TherapeuticWriting -0.0426 [-0.3739;  0.2887]
+Nicolino, 2001                   Control           One-Shot  0.6680 [ 0.2549;  1.0811]
+Pacanowski, 2020                 Control               Yoga -0.3798 [-0.9738;  0.2142]
+Perelman, 2022                   Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Resende, 2022                    Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Ridolfi, 2008                    Control           One-Shot  0.6680 [ 0.2549;  1.0811]
+Rodgers, 2018                    Control     Multicomponent  0.0461 [-0.2617;  0.3539]
+Rohde, 2014a                     Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Rosen, 1989                          CBT            Control -0.5923 [-0.9035; -0.2812]
+Seekis, 2020                     Control           One-Shot  0.6680 [ 0.2549;  1.0811]
+Sharpe, 2013                     Control     Multicomponent  0.0461 [-0.2617;  0.3539]
+Stice, 2013                      Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Stice, 2001              DissonanceBased      HealthyWeight -0.1852 [-0.7452;  0.3748]
+Stice, 2009                      Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Stice, 2015b                     Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Stice, 2023                      Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Tobin, 2022                      Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Tobin, 2022              DissonanceBased     Multicomponent -0.6080 [-0.9674; -0.2487]
+Tobin, 2022                      Control     Multicomponent  0.0461 [-0.2617;  0.3539]
+Warschburger, 2018               Control     Multicomponent  0.0461 [-0.2617;  0.3539]
+Winzelberg, 1998                     CBT            Control -0.5923 [-0.9035; -0.2812]
+Winzelberg, 2000                     CBT            Control -0.5923 [-0.9035; -0.2812]
+Vanderkruik, 2020                Control    DissonanceBased  0.6542 [ 0.4456;  0.8628]
+Zabinski, 2001                       CBT            Control -0.5923 [-0.9035; -0.2812]
+
+Number of studies: k = 42
+Number of pairwise comparisons: m = 50
+Number of observations: o = 8430
+Number of treatments: n = 13
+Number of designs: d = 14
+
+Random effects model
+
+Treatment estimate (sm = 'SMD', comparison: other treatments vs 'Control'):
+                          SMD             95%-CI     z  p-value
+ACT                   -0.6116 [-1.4215;  0.1983] -1.48   0.1389
+Appearance_Comparison -0.1963 [-0.8749;  0.4823] -0.57   0.5708
+CBT                   -0.5923 [-0.9035; -0.2812] -3.73   0.0002
+Control                     .                  .     .        .
+DissonanceBased       -0.6542 [-0.8628; -0.4456] -6.15 < 0.0001
+HealthyWeight         -0.4690 [-1.0665;  0.1286] -1.54   0.1240
+MediaLiteracy         -0.4234 [-0.8794;  0.0327] -1.82   0.0688
+Mindfulness           -0.3850 [-1.0804;  0.3103] -1.09   0.2778
+Multicomponent        -0.0461 [-0.3539;  0.2617] -0.29   0.7690
+One-Shot              -0.6680 [-1.0811; -0.2549] -3.17   0.0015
+PhysicalActivity      -0.6214 [-1.4943;  0.2514] -1.40   0.1629
+TherapeuticWriting     0.0426 [-0.2887;  0.3739]  0.25   0.8011
+Yoga                   0.3798 [-0.2142;  0.9738]  1.25   0.2101
+
+Quantifying heterogeneity / inconsistency:
+tau^2 = 0.1172; tau = 0.3423; I^2 = 82.7% [76.8%; 87.1%]
+
+Tests of heterogeneity (within designs) and inconsistency (between designs):
+                     Q d.f.  p-value
+Total           196.92   34 < 0.0001
+Within designs  162.75   28 < 0.0001
+Between designs  34.18    6 < 0.0001

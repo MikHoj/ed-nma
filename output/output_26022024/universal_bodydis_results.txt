@@ -1,0 +1,52 @@
+Original data:
+
+               treat1          treat2      TE   seTE
+Ciao, 2023    Control DissonanceBased  0.6401 0.2164
+Ciao, 2021a   Control DissonanceBased  0.4056 0.2041
+Ciao, 2021b   Control DissonanceBased  0.5454 0.1720
+Garbett, 2021 Control  Multicomponent -0.5443 0.1606
+Gehrman, 2006 Control  Multicomponent  0.0161 0.2213
+O'Dea, 2000   Control      Selfesteem  0.2360 0.0937
+
+Number of treatment arms (by study):
+              narms
+Ciao, 2023        2
+Ciao, 2021a       2
+Ciao, 2021b       2
+Garbett, 2021     2
+Gehrman, 2006     2
+O'Dea, 2000       2
+
+Results (random effects model):
+
+               treat1          treat2     SMD            95%-CI
+Ciao, 2023    Control DissonanceBased  0.5289 [ 0.2473; 0.8105]
+Ciao, 2021a   Control DissonanceBased  0.5289 [ 0.2473; 0.8105]
+Ciao, 2021b   Control DissonanceBased  0.5289 [ 0.2473; 0.8105]
+Garbett, 2021 Control  Multicomponent -0.3175 [-0.6530; 0.0181]
+Gehrman, 2006 Control  Multicomponent -0.3175 [-0.6530; 0.0181]
+O'Dea, 2000   Control      Selfesteem  0.2360 [-0.1157; 0.5878]
+
+Number of studies: k = 6
+Number of pairwise comparisons: m = 6
+Number of observations: o = 1051
+Number of treatments: n = 4
+Number of designs: d = 3
+
+Random effects model
+
+Treatment estimate (sm = 'SMD', comparison: other treatments vs 'Control'):
+                    SMD             95%-CI     z p-value
+Control               .                  .     .       .
+DissonanceBased -0.5289 [-0.8105; -0.2473] -3.68  0.0002
+Multicomponent   0.3175 [-0.0181;  0.6530]  1.85  0.0637
+Selfesteem      -0.2360 [-0.5878;  0.1157] -1.32  0.1884
+
+Quantifying heterogeneity / inconsistency:
+tau^2 = 0.0234; tau = 0.1531; I^2 = 38% [0.0%; 78.8%]
+
+Tests of heterogeneity (within designs) and inconsistency (between designs):
+                   Q d.f. p-value
+Total           4.84    3  0.1841
+Within designs  4.84    3  0.1841
+Between designs 0.00    0      --

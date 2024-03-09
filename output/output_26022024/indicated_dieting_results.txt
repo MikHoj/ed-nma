@@ -1,0 +1,29 @@
+Original data:
+
+             treat1  treat2      TE   seTE
+Saekow, 2015    CBT Control -0.1874 0.2489
+
+Number of treatment arms (by study):
+             narms
+Saekow, 2015     2
+
+Results (random effects model):
+
+             treat1  treat2     SMD            95%-CI
+Saekow, 2015    CBT Control -0.1874 [-0.6752; 0.3004]
+
+Number of studies: k = 1
+Number of pairwise comparisons: m = 1
+Number of observations: o = 65
+Number of treatments: n = 2
+Number of designs: d = 1
+
+Random effects model
+
+Treatment estimate (sm = 'SMD', comparison: 'CBT' vs 'Control'):
+            SMD            95%-CI     z p-value
+CBT     -0.1874 [-0.6752; 0.3004] -0.75  0.4514
+Control       .                 .     .       .
+
+Quantifying heterogeneity:
+tau^2 = NA; tau = NA
