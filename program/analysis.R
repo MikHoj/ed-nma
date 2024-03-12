@@ -37,7 +37,15 @@ netrank(net.s.bd)
 sink()
 
 png(filename = "output/selective_bodydis_netgraph.png", width = 12, height = 10, units = "in", res = 300)
-netgraphmod(net.s.bd)
+netgraph(net.s.bd,
+         seq = "optimal",
+         plastic = FALSE,
+         number.of.studies = TRUE,
+         cex.points = n.trts,
+         cex = 1.25,
+         offset = ifelse(trts %in% c("Appearance comparison"), 0.05, 0.03),
+         labels = paste0(trts, "\n(n=", round(n.trts), ")")
+)
 dev.off()
 
 png(filename = "output/selective_bodydis_forest.png", width = 10, height = 6, units = "in", res = 300)
